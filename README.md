@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/frantzmiccoli/Lahcuby.png)](http://travis-ci.org/frantzmiccoli/Lahcuby)
+
 This is an implementation of the Late Acceptance Hill Climbing algorithm in 
 rUBY (Burke & Bykov 2016).
 
