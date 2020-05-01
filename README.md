@@ -10,14 +10,14 @@ Implement your version of a solution,
 here we look for the min of `f(x) = x ** 2` between [-5; 5]:
 
 ```ruby
-require 'lahcuby'
+require 'lahcuby/problem/solution'
 
-class MySolution < Lachuby::Problem::Solution
+class MySolution < Lahcuby::Problem::Solution
 
   def initialize(x_value = nil)
     @x_value = x_value 
-    unless x_value
-      x_value = (rand() - 0.5) * 10
+    unless @x_value
+      @x_value = (rand() - 0.5) * 10
     end
   end
   
@@ -31,12 +31,12 @@ class MySolution < Lachuby::Problem::Solution
       new_x_value = _get_neighboring_x_value
     end 
     
-    MySolution(new_x_value)
+    MySolution.new new_x_value
   end 
   
   private
   
-  def _get_neighboring_x_value()
+  def _get_neighboring_x_value
     @x_value + rand() - 0.5
   end 
 end
@@ -44,15 +44,17 @@ end
 
 Solve it
 
-```
-require 'lachuby/solver'
+```ruby
+require 'lahcuby/solver'
 
 initial_solution = MySolution.new
 maximum_iterations = 1000
 memory_size = 10
 
-solver = Lachuby::Solver.new initial_solution, maximum_iterations, memory_size
+solver = Lahcuby::Solver.new initial_solution, maximum_iterations, memory_size
 optimized_solution = solver.solve
+
+puts optimized_solution.get_cost
 
 # optimized_solution.x_value should be about 0 
 ```

@@ -22,14 +22,14 @@ module Lahcuby
         @cost = nil
       end
 
-      def get_cost()
+      def get_cost
         unless @cost
           @cost = @@rastrigin.evaluate(@x_values)
         end
         @cost
       end
 
-      def get_variation()
+      def get_variation
         new_x_values = @x_values.clone
         random_index = rand(@x_values.length)
 
