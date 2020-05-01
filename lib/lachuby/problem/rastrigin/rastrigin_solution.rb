@@ -1,9 +1,10 @@
+require 'lachuby/problem/solution'
 require 'lachuby/problem/rastrigin/rastrigin'
 
 
 module Lachuby
   module Problem
-    class RastriginSolution
+    class RastriginSolution < Lachuby::Problem::Solution
 
       @@rastrigin = Lachuby::Problem::Rastrigin.new
 

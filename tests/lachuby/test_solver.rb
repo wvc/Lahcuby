@@ -7,7 +7,7 @@ require 'lachuby/solver'
 
 class TestSolver < Test::Unit::TestCase
 
-  @@initial_solution = Lachuby::Problem::StyblinskiTangSolution.new
+  @@initial_solution = Lachuby::Problem::RastriginSolution.new
   @@maximum_number_of_iterations = 1000
   @@memory_size = 10
 
