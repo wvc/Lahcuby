@@ -1,13 +1,14 @@
 require 'test/unit'
 
 require 'lachuby/problem/rastrigin/rastrigin_solution'
+require 'lachuby/problem/styblinski_tang/styblinski_tang_solution'
 require 'lachuby/dummy_solver'
 require 'lachuby/solver'
 
 class TestSolver < Test::Unit::TestCase
 
-  @@initial_solution = Lachuby::Problem::RastriginSolution.new
-  @@maximum_number_of_iterations = 1000000
+  @@initial_solution = Lachuby::Problem::StyblinskiTangSolution.new
+  @@maximum_number_of_iterations = 1000
   @@memory_size = 10
 
   def test_dummy_solver
