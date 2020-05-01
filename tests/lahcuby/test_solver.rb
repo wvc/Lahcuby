@@ -1,19 +1,19 @@
 require 'test/unit'
 
-require 'lachuby/problem/rastrigin/rastrigin_solution'
-require 'lachuby/problem/styblinski_tang/styblinski_tang_solution'
-require 'lachuby/dummy_solver'
-require 'lachuby/solver'
+require 'lahcuby/problem/rastrigin/rastrigin_solution'
+require 'lahcuby/problem/styblinski_tang/styblinski_tang_solution'
+require 'lahcuby/dummy_solver'
+require 'lahcuby/solver'
 
 class TestSolver < Test::Unit::TestCase
 
-  @@initial_solution = Lachuby::Problem::RastriginSolution.new
+  @@initial_solution = Lahcuby::Problem::RastriginSolution.new
   @@maximum_number_of_iterations = 1000
   @@memory_size = 10
 
   def test_dummy_solver
     solver =
-        Lachuby::DummySolver.new(
+        Lahcuby::DummySolver.new(
             @@initial_solution, @@maximum_number_of_iterations)
     best_solution = solver.solve
 
@@ -25,7 +25,7 @@ class TestSolver < Test::Unit::TestCase
 
   def test_solver
     solver =
-        Lachuby::Solver.new(
+        Lahcuby::Solver.new(
             @@initial_solution, @@maximum_number_of_iterations, @@memory_size)
     best_solution = solver.solve
 

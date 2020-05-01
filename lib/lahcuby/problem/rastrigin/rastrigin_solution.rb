@@ -1,12 +1,12 @@
-require 'lachuby/problem/solution'
-require 'lachuby/problem/rastrigin/rastrigin'
+require 'lahcuby/problem/solution'
+require 'lahcuby/problem/rastrigin/rastrigin'
 
 
-module Lachuby
+module Lahcuby
   module Problem
-    class RastriginSolution < Lachuby::Problem::Solution
+    class RastriginSolution < Lahcuby::Problem::Solution
 
-      @@rastrigin = Lachuby::Problem::Rastrigin.new
+      @@rastrigin = Lahcuby::Problem::Rastrigin.new
 
       def initialize(x_values = nil)
         @x_minimum = -5.12

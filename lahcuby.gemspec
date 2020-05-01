@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://frantzmiccoli.github.io/Lahcuby'
 
   spec.files = Dir['{lib}/solver.rb', '{lib}/problem/solution.rb', 'LICENSE.md']
-  spec.require_paths = ['lib']
+  spec.require_paths = ['lib/lahcuby']
   spec.test_files = Dir.glob('test/**/test_*.rb')
 
   spec.required_ruby_version = '>= 2.3'

@@ -1,12 +1,12 @@
-require 'lachuby/problem/solution'
-require 'lachuby/problem/styblinski_tang/styblinski_tang'
+require 'lahcuby/problem/solution'
+require 'lahcuby/problem/styblinski_tang/styblinski_tang'
 
 
-module Lachuby
+module Lahcuby
   module Problem
-    class StyblinskiTangSolution < Lachuby::Problem::Solution
+    class StyblinskiTangSolution < Lahcuby::Problem::Solution
 
-      @@styblinksiTang = Lachuby::Problem::StyblinskiTang.new
+      @@styblinksiTang = Lahcuby::Problem::StyblinskiTang.new
 
       def initialize(x_values = nil)
         @x_minimum = -5

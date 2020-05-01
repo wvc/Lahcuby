@@ -10,7 +10,7 @@ Implement your version of a solution,
 here we look for the min of `f(x) = x ** 2` between [-5; 5]:
 
 ```ruby
-require 'lachuby/problem/solution'
+require 'lahcuby'
 
 class MySolution < Lachuby::Problem::Solution
 

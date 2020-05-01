@@ -1,11 +1,11 @@
 require 'test/unit'
 
-require 'lachuby/problem/rastrigin/rastrigin'
+require 'lahcuby/problem/rastrigin/rastrigin'
 
 class TestRastrigin < Test::Unit::TestCase
 
   def test_rastrigin
-    rastrigin = Lachuby::Problem::Rastrigin.new
+    rastrigin = Lahcuby::Problem::Rastrigin.new
     minimum_value = rastrigin.evaluate([0, 0])
     assert_equal(0, minimum_value)
 

@@ -1,5 +1,5 @@
 
-module Lachuby
+module Lahcuby
   module Problem
     class StyblinskiTang
 

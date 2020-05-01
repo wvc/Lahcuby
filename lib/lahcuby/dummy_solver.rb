@@ -1,4 +1,4 @@
-module Lachuby
+module Lahcuby
   class DummySolver
 
     def initialize(initial_solution, maximum_number_of_iterations)

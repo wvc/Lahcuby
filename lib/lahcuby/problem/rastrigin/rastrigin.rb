@@ -1,5 +1,5 @@
 # http://en.wikipedia.org/wiki/Rastrigin_function
-module Lachuby
+module Lahcuby
   module Problem
     class Rastrigin
 
