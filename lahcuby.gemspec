@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.name = 'lachuby'
+  spec.name = 'lahcuby'
   spec.version = '1.0.0'
 
   spec.authors = ['Fräntz Miccoli']
