@@ -12,6 +12,7 @@ module Lachuby
       @memory_size.times do |_|
         costs_memory.push(@current_solution.get_cost)
       end
+      best_solution = @current_solution
 
       @maximum_number_of_iterations.times do |iteration|
         memory_index = iteration % @memory_size
@@ -29,9 +30,13 @@ module Lachuby
         if beats_memory_cost
           costs_memory[memory_index] = new_solution.get_cost
         end
+
+        if @current_solution.get_cost < best_solution.get_cost
+          best_solution = @current_solution
+        end
       end
 
-      @current_solution
+      best_solution
     end
 
   end
