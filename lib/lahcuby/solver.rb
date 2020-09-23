@@ -19,7 +19,7 @@ module Lahcuby
         new_solution = @current_solution.get_variation
 
         beats_current_solution =
-            new_solution.get_cost < @current_solution.get_cost
+            new_solution.get_cost <= @current_solution.get_cost
         memory_cost = costs_memory[memory_index]
         beats_memory_cost = new_solution.get_cost < memory_cost
 
